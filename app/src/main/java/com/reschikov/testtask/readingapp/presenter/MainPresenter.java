@@ -35,6 +35,10 @@ public class MainPresenter extends MvpPresenter<PagingMainView> {
 	public MainPresenter(int lastPage, int lastPlace) {
 		this.lastPage = lastPage;
 		this.lastPlace = lastPlace;
+	}
+
+	@Override
+	protected void onFirstViewAttach() {
 		setPages();
 	}
 

@@ -87,7 +87,7 @@ public class MainActivity extends MvpAppCompatActivity implements PagingMainView
 
 	@Override
 	public void showReadAmount(int amountOfRead) {
-		sb.replace(startPercentageOfRead, sb.length(), String.valueOf(amountOfRead));
+		sb.replace(startPercentageOfRead, sb.length(), String.valueOf(amountOfRead) + '%');
 		setTitle(sb);
 	}
 }
